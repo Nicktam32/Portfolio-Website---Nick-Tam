@@ -4,3 +4,8 @@ function toggleMenu() {
   menu.classList.toggle("open");
   icon.classList.toggle("open");
 }
+
+function scrollToSection(sectionId) {
+  const section = document.getElementById(sectionId);
+  section.scrollIntoView({ behavior: 'smooth' });
+}
